@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: dbsales
+    schema: public
+    tables:
+      - name: commodities
+        description: "Tabela de commodities"
+        columns:
+          - name: Date
+            description: "Data da cotação"
+          - name: Close
+            description: "Preço de fechamento"
+          - name: simbolo
+            description: "Simbolo da commodity"
