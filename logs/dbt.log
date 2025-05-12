@@ -124,3 +124,156 @@ Runtime Error
 [0m18:12:42.812001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f64c30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088ccb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082e5150>]}
 [0m18:12:42.812852 [debug] [MainThread]: Flushing usage events
 [0m18:12:43.610167 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:14:54.569918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b09940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10885fed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10885fd90>]}
+
+
+============================== 04:14:54.572215 | ec86d827-38de-465c-8f42-885dd9ccbe71 ==============================
+[0m04:14:54.572215 [info ] [MainThread]: Running with dbt=1.9.4
+[0m04:14:54.572474 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/gabrielpereira/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m04:14:54.647338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ec86d827-38de-465c-8f42-885dd9ccbe71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108de5810>]}
+[0m04:14:54.665551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ec86d827-38de-465c-8f42-885dd9ccbe71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10878e470>]}
+[0m04:14:54.665999 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m04:14:54.705454 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m04:14:54.705791 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m04:14:54.705933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ec86d827-38de-465c-8f42-885dd9ccbe71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108954f50>]}
+[0m04:14:54.947405 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m04:14:54.949209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ec86d827-38de-465c-8f42-885dd9ccbe71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083d4050>]}
+[0m04:14:54.964065 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/manifest.json
+[0m04:14:54.965389 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/semantic_manifest.json
+[0m04:14:54.974831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ec86d827-38de-465c-8f42-885dd9ccbe71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095da890>]}
+[0m04:14:54.975009 [info ] [MainThread]: Found 433 macros
+[0m04:14:54.975129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ec86d827-38de-465c-8f42-885dd9ccbe71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10954af70>]}
+[0m04:14:54.975895 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m04:14:54.976107 [debug] [MainThread]: Command end result
+[0m04:14:55.007536 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/manifest.json
+[0m04:14:55.008257 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/semantic_manifest.json
+[0m04:14:55.009545 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/run_results.json
+[0m04:14:55.012807 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.47341245, "process_in_blocks": "0", "process_kernel_time": 0.118425, "process_mem_max_rss": "110493696", "process_out_blocks": "0", "process_user_time": 0.850939}
+[0m04:14:55.012973 [debug] [MainThread]: Command `dbt run` succeeded at 04:14:55.012938 after 0.47 seconds
+[0m04:14:55.013105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10871ef90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10952dd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10952f5f0>]}
+[0m04:14:55.013231 [debug] [MainThread]: Flushing usage events
+[0m04:14:56.935362 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:33:56.013931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105975940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066cfed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066cfd90>]}
+
+
+============================== 04:33:56.016247 | ce04105e-63c3-461b-bb26-6b16de6d3ae8 ==============================
+[0m04:33:56.016247 [info ] [MainThread]: Running with dbt=1.9.4
+[0m04:33:56.016491 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/gabrielpereira/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m04:33:56.083817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ce04105e-63c3-461b-bb26-6b16de6d3ae8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c51810>]}
+[0m04:33:56.102355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ce04105e-63c3-461b-bb26-6b16de6d3ae8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065fa470>]}
+[0m04:33:56.103324 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m04:33:56.141818 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m04:33:56.158851 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m04:33:56.159054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ce04105e-63c3-461b-bb26-6b16de6d3ae8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067c3750>]}
+[0m04:33:56.397915 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ce04105e-63c3-461b-bb26-6b16de6d3ae8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106220050>]}
+[0m04:33:56.412056 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/manifest.json
+[0m04:33:56.413283 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/semantic_manifest.json
+[0m04:33:56.441808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ce04105e-63c3-461b-bb26-6b16de6d3ae8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067b7af0>]}
+[0m04:33:56.442030 [info ] [MainThread]: Found 433 macros
+[0m04:33:56.442175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ce04105e-63c3-461b-bb26-6b16de6d3ae8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10676ec30>]}
+[0m04:33:56.442755 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m04:33:56.442984 [debug] [MainThread]: Command end result
+[0m04:33:56.450014 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/manifest.json
+[0m04:33:56.450782 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/semantic_manifest.json
+[0m04:33:56.452157 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/run_results.json
+[0m04:33:56.454042 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.46486083, "process_in_blocks": "0", "process_kernel_time": 0.111818, "process_mem_max_rss": "111263744", "process_out_blocks": "0", "process_user_time": 0.85868}
+[0m04:33:56.454234 [debug] [MainThread]: Command `dbt run` succeeded at 04:33:56.454194 after 0.47 seconds
+[0m04:33:56.454391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10658af90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073a12e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107418f70>]}
+[0m04:33:56.454532 [debug] [MainThread]: Flushing usage events
+[0m04:33:58.108707 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:34:19.638480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104169940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ec3ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ec3d90>]}
+
+
+============================== 04:34:19.640656 | 3f4af317-ff2c-4e3b-92ea-4707a42f6bf7 ==============================
+[0m04:34:19.640656 [info ] [MainThread]: Running with dbt=1.9.4
+[0m04:34:19.640920 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/gabrielpereira/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m04:34:19.708160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3f4af317-ff2c-4e3b-92ea-4707a42f6bf7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105445810>]}
+[0m04:34:19.726432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3f4af317-ff2c-4e3b-92ea-4707a42f6bf7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104de6470>]}
+[0m04:34:19.727383 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m04:34:19.766470 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m04:34:19.783186 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m04:34:19.783389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '3f4af317-ff2c-4e3b-92ea-4707a42f6bf7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104fb7750>]}
+[0m04:34:20.016803 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m04:34:20.018643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3f4af317-ff2c-4e3b-92ea-4707a42f6bf7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a34050>]}
+[0m04:34:20.033459 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/manifest.json
+[0m04:34:20.034801 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/semantic_manifest.json
+[0m04:34:20.064930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3f4af317-ff2c-4e3b-92ea-4707a42f6bf7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104fabaf0>]}
+[0m04:34:20.065161 [info ] [MainThread]: Found 433 macros
+[0m04:34:20.065311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3f4af317-ff2c-4e3b-92ea-4707a42f6bf7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f62c30>]}
+[0m04:34:20.065890 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m04:34:20.066122 [debug] [MainThread]: Command end result
+[0m04:34:20.072862 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/manifest.json
+[0m04:34:20.073490 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/semantic_manifest.json
+[0m04:34:20.074623 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/run_results.json
+[0m04:34:20.076308 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.46366537, "process_in_blocks": "0", "process_kernel_time": 0.095032, "process_mem_max_rss": "110739456", "process_out_blocks": "0", "process_user_time": 0.847935}
+[0m04:34:20.076477 [debug] [MainThread]: Command `dbt run` succeeded at 04:34:20.076441 after 0.46 seconds
+[0m04:34:20.076616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d7ef90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b952e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c0cf70>]}
+[0m04:34:20.076740 [debug] [MainThread]: Flushing usage events
+[0m04:34:20.644358 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:35:02.179014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103b11940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104867ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104867d90>]}
+
+
+============================== 04:35:02.181336 | cc7dca29-78f1-4d46-87ab-e02af3d11b1a ==============================
+[0m04:35:02.181336 [info ] [MainThread]: Running with dbt=1.9.4
+[0m04:35:02.181600 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/gabrielpereira/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m04:35:02.248272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cc7dca29-78f1-4d46-87ab-e02af3d11b1a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ded810>]}
+[0m04:35:02.266936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cc7dca29-78f1-4d46-87ab-e02af3d11b1a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104792470>]}
+[0m04:35:02.267962 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m04:35:02.306605 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m04:35:02.323254 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m04:35:02.323455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'cc7dca29-78f1-4d46-87ab-e02af3d11b1a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10495f750>]}
+[0m04:35:02.560995 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.datawarehouse
+[0m04:35:02.562848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cc7dca29-78f1-4d46-87ab-e02af3d11b1a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043dc050>]}
+[0m04:35:02.577213 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/manifest.json
+[0m04:35:02.578454 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/semantic_manifest.json
+[0m04:35:02.609080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cc7dca29-78f1-4d46-87ab-e02af3d11b1a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104957af0>]}
+[0m04:35:02.609327 [info ] [MainThread]: Found 433 macros
+[0m04:35:02.609472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cc7dca29-78f1-4d46-87ab-e02af3d11b1a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10490ac30>]}
+[0m04:35:02.610078 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m04:35:02.610308 [debug] [MainThread]: Command end result
+[0m04:35:02.617204 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/manifest.json
+[0m04:35:02.617829 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/semantic_manifest.json
+[0m04:35:02.619069 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/target/run_results.json
+[0m04:35:02.620736 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.46674904, "process_in_blocks": "0", "process_kernel_time": 0.106727, "process_mem_max_rss": "110526464", "process_out_blocks": "0", "process_user_time": 0.851055}
+[0m04:35:02.620899 [debug] [MainThread]: Command `dbt run` succeeded at 04:35:02.620865 after 0.47 seconds
+[0m04:35:02.621033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104726f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10553d2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055b0f70>]}
+[0m04:35:02.621152 [debug] [MainThread]: Flushing usage events
+[0m04:35:03.156611 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:37:07.615192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107be9940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108943ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108943d90>]}
+
+
+============================== 04:37:07.617405 | 8b23bde4-e52d-4060-987c-be19133b1f7c ==============================
+[0m04:37:07.617405 [info ] [MainThread]: Running with dbt=1.9.4
+[0m04:37:07.617659 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/gabrielpereira/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m04:37:07.617877 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m04:37:07.619327 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.028760126, "process_in_blocks": "0", "process_kernel_time": 0.078203, "process_mem_max_rss": "100515840", "process_out_blocks": "0", "process_user_time": 0.479708}
+[0m04:37:07.619487 [debug] [MainThread]: Command `dbt run` failed at 04:37:07.619452 after 0.03 seconds
+[0m04:37:07.619616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108886d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087eb890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10886d040>]}
+[0m04:37:07.619742 [debug] [MainThread]: Flushing usage events
+[0m04:37:09.489851 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:28:02.339825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10795d940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1086b7ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1086b7d90>]}
+
+
+============================== 18:28:02.342174 | 53ed4d91-7332-495e-86d9-9a38e326b7f5 ==============================
+[0m18:28:02.342174 [info ] [MainThread]: Running with dbt=1.9.4
+[0m18:28:02.342437 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/Users/gabrielpereira/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:28:02.342654 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/gabrielpereira/Documents/GitHub/DataWarehouseProject/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:28:02.344670 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.029452542, "process_in_blocks": "0", "process_kernel_time": 0.071843, "process_mem_max_rss": "99090432", "process_out_blocks": "0", "process_user_time": 0.480596}
+[0m18:28:02.344854 [debug] [MainThread]: Command `dbt run` failed at 18:28:02.344815 after 0.03 seconds
+[0m18:28:02.344980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1085fad70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10855f890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1085e5040>]}
+[0m18:28:02.345104 [debug] [MainThread]: Flushing usage events
+[0m18:28:04.165365 [debug] [MainThread]: An error was encountered while trying to flush usage events

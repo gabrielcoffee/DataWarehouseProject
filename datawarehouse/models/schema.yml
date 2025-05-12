@@ -13,12 +13,3 @@ sources:
             description: "Preço de fechamento"
           - name: simbolo
             description: "Simbolo da commodity"
-    - name: movimentacao_commodities
-        description: "Tabela de commodities"
-        columns:
-          - name: Date
-            description: "Data da cotação"
-          - name: Close
-            description: "Preço de fechamento"
-          - name: simbolo
-            description: "Simbolo da commodity"
